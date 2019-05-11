@@ -143,6 +143,7 @@ goog.require('plugin.capture.CapturePlugin');
 goog.require('plugin.cesium.Plugin');
 goog.require('plugin.config.Plugin');
 goog.require('plugin.descriptor.SearchPlugin');
+goog.require('plugin.featuretable.FeatureTablePlugin');
 goog.require('plugin.file.csv.CSVPlugin');
 goog.require('plugin.file.geojson.GeoJSONPlugin');
 goog.require('plugin.file.gml.GMLPlugin');
@@ -533,6 +534,7 @@ os.MainCtrl.prototype.addPlugins = function() {
   os.ui.pluginManager.addPlugin(plugin.suncalc.Plugin.getInstance());
   os.ui.pluginManager.addPlugin(plugin.track.TrackPlugin.getInstance());
   os.ui.pluginManager.addPlugin(plugin.openpage.Plugin.getInstance());
+  os.ui.pluginManager.addPlugin(plugin.featuretable.FeatureTablePlugin.getInstance());
 };
 
 
