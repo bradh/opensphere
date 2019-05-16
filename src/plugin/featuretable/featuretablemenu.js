@@ -75,8 +75,8 @@ plugin.featuretable.menu.showTable_ = function(event) {
             'show-close': true
           };
           var template = '<featuretable></featuretable>';
-          var scopeOptions = { 'gridCols': source.getColumns() };
-          // TODO: add data to grid.
+
+          var scopeOptions = {'gridCols': source.getColumns(), 'properties': source.getFeatures()};
           os.ui.window.create(windowOptions, template, undefined, undefined, undefined, scopeOptions);
         }
       }

@@ -46,9 +46,10 @@ plugin.featuretable.featureTableCtrl = function($scope, $element) {
     'forceFitColumns': true,
     'multiColumnSort': false,
     'multiSelect': false,
-    'defaultFormatter': os.ui.slick.formatter.urlNewTabFormatter,
+    'defaultFormatter': os.ui.slick.formatter.columnFormatter, // os.ui.slick.formatter.urlNewTabFormatter,
     'enableAsyncPostRender': true
   };
+  this.scope_['idField'] = 'ID';
 
   /**
    * @type {?angular.JQLite}
